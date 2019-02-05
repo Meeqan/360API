@@ -11,7 +11,7 @@ then
 
         if [ -d $DJANGO_PROJECT ]; then
 
-            echo '---------- Starting app ----------'
+            echo '---------- Generating migrations ----------'
             cd $DJANGO_PROJECT && python manage.py makemigrations
         else
             echo '\n\n'
